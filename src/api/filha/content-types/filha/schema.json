@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "filhas",
+  "info": {
+    "singularName": "filha",
+    "pluralName": "filhas",
+    "displayName": "Filha",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nome": {
+      "type": "string"
+    },
+    "aula": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::aula.aula",
+      "inversedBy": "filhas"
+    },
+    "Data_nascimento": {
+      "type": "date"
+    }
+  }
+}

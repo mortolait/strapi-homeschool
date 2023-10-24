@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "livros",
+  "info": {
+    "singularName": "livro",
+    "pluralName": "livros",
+    "displayName": "Livros"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titulo": {
+      "type": "string"
+    },
+    "filha": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::filha.filha"
+    },
+    "Autor": {
+      "type": "string"
+    },
+    "inicio": {
+      "type": "date"
+    },
+    "Termino": {
+      "type": "date"
+    },
+    "Observacao": {
+      "type": "blocks"
+    },
+    "link_arquivo": {
+      "type": "string"
+    }
+  }
+}
