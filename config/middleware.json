@@ -1,0 +1,11 @@
+{
+    "security": {
+      "contentSecurityPolicy": {
+        "useDefaults": true,
+        "directives": {
+          "connectSrc": ["'self'", "http://172.173.237.220:1337"]
+        }
+      }
+    }
+  }
+  
